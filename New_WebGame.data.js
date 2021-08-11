@@ -18,8 +18,8 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = 'D:/TESTDRIVE UNREAL/GAME_LVL_FIX/WebGame/Game_ForWeb/New_WebGame/Binaries/HTML5/New_WebGame.data';
-    var REMOTE_PACKAGE_BASE = 'New_WebGame.data';
+    var PACKAGE_NAME = 'https://dl.dropboxusercontent.com/s/68odsil00lg0wly/New_WebGame.data?dl=0';
+    var REMOTE_PACKAGE_BASE = 'https://dl.dropboxusercontent.com/s/68odsil00lg0wly/New_WebGame.data?dl=0';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       err('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
